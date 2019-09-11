@@ -68,7 +68,7 @@ declare namespace signale {
         /**
          * Name of the scope.
          */
-        scope?: string;
+        scope?: string | string[];
         /**
          * Holds the configuration of the custom and default loggers.
          */
@@ -80,6 +80,7 @@ declare namespace signale {
          * [Writable stream](https://nodejs.org/api/stream.html#stream_writable_streams).
          */
         stream?: NodeJS.WriteStream;
+        logLevel?: string
     }
 
     interface SignaleConstructor {
